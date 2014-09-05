@@ -78,7 +78,7 @@
 													<a data-theme="${color}" data-toggle="tab" data-application="${applicationStatus.index}" data-tabIndex="${applicationStatus.index}" data-group="${applicationStatus.index}" href="#application-type-${fn:toUpperCase(application.code)}" class="${empty application.images && empty application.protocols ? 'disabled' : ''}">
 														<c:set var="imageAlt" value=""/>
 														<cst:getApplicationNameFromApplicationCode var="imageAlt" applicationCode="${fn:toLowerCase(application.code)}" />
-														<img src="/img/demo/common/application-${fn:toLowerCase(application.code)}.png" class="application-icon" alt="${imageAlt}">
+														<img src="/img/demo/common/application-${fn:toLowerCase(application.code)}.png" class="application-icon" alt="${application.method}">
 													</a>
 													<span class="application-indicator ${color}"></span>
 												</li>
